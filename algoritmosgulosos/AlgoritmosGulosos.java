@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package algoritmosgulosos;
+
+import static algoritmosgulosos.EscalonamentoIntervalos.SDM;
 
 /**
  *
- * @author camil
+ * @author Camila Borba Rocha
  */
 public class AlgoritmosGulosos {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int[] s = new int[]{4, 6, 13, 4, 2, 6, 7, 9, 1, 3, 9};
+        int[] f = new int[]{8, 7, 14, 5, 4, 9, 10, 11, 6, 13, 12};
+        int n = 11;
+
+        int[] SDM = SDM(s, f, n);
+        for (int i = 0; i < SDM.length; i++) {
+            System.out.println(SDM[i]);
+        }
+
     }
-    
+
 }
